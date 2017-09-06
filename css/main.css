@@ -1143,7 +1143,7 @@ a.accordion-toggle  i{
 
 .single-profile-top1, 
 .single-profile-bottom  {
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd; */
   padding: 15px;
   position: relative;
   font-weight: 400;
@@ -1157,7 +1157,7 @@ a.accordion-toggle  i{
 
 .single-profile-top2, 
 .single-profile-bottom  {
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd; */
   padding: 15px;
   position: relative;
   font-weight: 400;
@@ -1167,11 +1167,12 @@ a.accordion-toggle  i{
   background-position: center 25%;
   /* background-position-y: 5em; */
   background-repeat: no-repeat;
+  padding-top: 30px;
 }
 
 .single-profile-top3, 
 .single-profile-bottom  {
-  border: 1px solid #ddd;
+ /* border: 1px solid #ddd; */
   padding: 15px;
   position: relative;
   font-weight: 400;
@@ -1181,6 +1182,7 @@ a.accordion-toggle  i{
   background-position: center 25%;
   /* background-position-y: 5em; */
   background-repeat: no-repeat;
+  padding-top: 90px;
 }
 
 

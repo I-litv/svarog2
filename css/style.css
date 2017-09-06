@@ -101,8 +101,8 @@ footer{
 	background-image:url(../img/rating/tumby_vse.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position:center center;
-	height: : 500px;
+	/*background-position:center bottom; */
+	height: 590px;
 
 
 }
