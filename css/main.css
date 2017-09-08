@@ -1142,7 +1142,7 @@ a.accordion-toggle  i{
 }
 
 .single-profile-top1, 
-.single-profile-bottom  {
+.single-profile-bottom1  {
   /*border: 1px solid #ddd; */
   padding: 15px;
   position: relative;
@@ -1156,7 +1156,7 @@ a.accordion-toggle  i{
 }
 
 .single-profile-top2, 
-.single-profile-bottom  {
+.single-profile-bottom2  {
   /*border: 1px solid #ddd; */
   padding: 15px;
   position: relative;
@@ -1171,7 +1171,7 @@ a.accordion-toggle  i{
 }
 
 .single-profile-top3, 
-.single-profile-bottom  {
+.single-profile-bottom3  {
  /* border: 1px solid #ddd; */
   padding: 15px;
   position: relative;

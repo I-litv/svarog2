@@ -4587,6 +4587,7 @@ a.thumbnail.active {
 .media-body {
   overflow: hidden;
   zoom: 1;
+      padding-left: 10px;
 }
 .media,
 .media .media {
@@ -4596,6 +4597,9 @@ a.thumbnail.active {
   margin-top: 0;
   text-align: center;
   margin: auto 25%;
+}
+.mediaMain:first-child {
+  margin-top: 0;
 }
 .media-object {
   display: block;
@@ -6004,6 +6008,8 @@ td.visible-print {
     box-shadow:0px 1px 3px rgba(0,0,0,0.25);
     border-radius:3px;
     background:#f7f7f7;
+    margin: auto auto;
+    padding-top: 2px;
 }
  
 /*----- Section Titles -----*/
@@ -6012,18 +6018,21 @@ td.visible-print {
     padding:15px;
     display:inline-block;
     border-bottom:1px solid #1a1a1a;
-    background:#333;
+    background:#a20606;
     transition:all linear 0.15s;
     /* Type */
-    font-size:1.200em;
+    font-size:1.300em;
     text-shadow:0px 1px 0px #1a1a1a;
     color:#fff;
 }
  
 .accordion-section-title.active, .accordion-section-title:hover {
-    background:#4c4c4c;
+    background:black;
     /* Type */
     text-decoration:none;
+    color: #a20606;
+    transition:all ease-in-out 1s;
+    animation: move-in-steps 8s infinite
 }
  
 .accordion-section:last-child .accordion-section-title {
@@ -6034,4 +6043,8 @@ td.visible-print {
 .accordion-section-content {
     padding:15px;
     display:none;
+}
+
+@keyframes move-in-steps {
+  animation-direction: alternate;
 }
