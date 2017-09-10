@@ -884,7 +884,7 @@ pre code {
   margin-left: 16.666666666666664%;
 }
 .col-xs-offset-1 {
-  margin-left: 6.333333333333332%;
+  margin-left: 8.333333333333332%;
 }
 .col-xs-offset-0 {
   margin-left: 0%;
@@ -2947,7 +2947,7 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   list-style: none;
   font-size: 14px;
-  background-color: rgba(162, 6, 6, 0.8);
+  background-color: rgba(251, 36, 36, 0.69);
   border: 1px solid red;
   border: 1px solid rgba(0, 0, 0, 0.37);
   border-radius: 10px;
@@ -4587,18 +4587,12 @@ a.thumbnail.active {
 .media-body {
   overflow: hidden;
   zoom: 1;
-      padding-left: 10px;
 }
 .media,
 .media .media {
   margin-top: 15px;
 }
 .media:first-child {
-  margin-top: 0;
-  text-align: center;
-  margin: auto 25%;
-}
-.mediaMain:first-child {
   margin-top: 0;
 }
 .media-object {
@@ -6008,8 +6002,6 @@ td.visible-print {
     box-shadow:0px 1px 3px rgba(0,0,0,0.25);
     border-radius:3px;
     background:#f7f7f7;
-    margin: auto auto;
-    padding-top: 2px;
 }
  
 /*----- Section Titles -----*/
@@ -6018,21 +6010,18 @@ td.visible-print {
     padding:15px;
     display:inline-block;
     border-bottom:1px solid #1a1a1a;
-    background:#a20606;
+    background:#333;
     transition:all linear 0.15s;
     /* Type */
-    font-size:1.300em;
+    font-size:1.200em;
     text-shadow:0px 1px 0px #1a1a1a;
     color:#fff;
 }
  
 .accordion-section-title.active, .accordion-section-title:hover {
-    background:black;
+    background:#4c4c4c;
     /* Type */
     text-decoration:none;
-    color: #a20606;
-    transition:all ease-in-out 1s;
-    animation: move-in-steps 8s infinite
 }
  
 .accordion-section:last-child .accordion-section-title {
@@ -6043,8 +6032,4 @@ td.visible-print {
 .accordion-section-content {
     padding:15px;
     display:none;
-}
-
-@keyframes move-in-steps {
-  animation-direction: alternate;
 }

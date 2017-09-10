@@ -55,15 +55,15 @@ a, a:hover, a:active{ outline:0px !important}
 ---------------------------------*/
 body {
 	background:url(../img/background.png);
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	font-weight:normal;
-	color:#695d5d;
+	color:#888888;
 	margin:0;
 }
 h2{
 	font-size:34px;
-	color:#a20606;
+	color:#222222;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
@@ -82,7 +82,7 @@ h3{
 h6{
 	font-size:16px;
 	color:#888888;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	text-align:center;
 	margin:0 0 60px 0;
@@ -98,52 +98,23 @@ footer{
 	background-image: url(../img/headerFooter.png);
 }
 .ratingBackground {
-	background-image:url(../img/rating/tumby_vse.png);
-	background-repeat: no-repeat;
+	background-image:url(../img/rating/1.jpg);
 	background-size: cover;
-	/*background-position:center bottom; */
-	height: 590px;
 
 
 }
-.frontPage {
-	background:url(../img/Zastavka-min.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position:center center;
-}
-input{
-	border: 1px solid #a20606;
-	border-radius: 2px;
-	background: none;
-	color:#a20606; 
-	padding-top: 3px
-}
-input:hover{
-	border: 1px solid black;
-	border-radius: 2px;
-	background: red;
-	color:black; 
-}
+
 /* Header Styles
 ---------------------------------*/
 
 .header{
 	text-align:center;
-	
+	background:url(../img/Zastavka-min.png);
 	padding:280px 0;
 	background-repeat: no-repeat;
    	background-position: center center;
 }
-.headerOne{
-	background: none;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 
-}
 .header h1{
 	font-family: 'Montserrat',sans-serif;
 	font-size:70px;
@@ -413,6 +384,76 @@ hr {
 	color: #111;
 }
 
+
+/* Portfolio
+---------------------------------
+.Portfolio-nav{
+	padding:0;
+	margin:0 0 45px 0;
+	list-style:none;
+	text-align:center;
+}
+.Portfolio-nav li{
+	margin:0 10px;
+	display:inline;
+}
+.Portfolio-nav li a{
+	display:inline-block;
+	padding:10px 22px;
+	font-size:12px;
+	line-height:20px;
+	color:#222222;
+	border-radius:4px;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	background:#f7f7f7;
+	margin-bottom:5px;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.Portfolio-nav li a:hover{
+	background:#7cc576;
+	color:#fff;
+	text-decoration:none;
+}
+
+.portfolioContainer{
+	margin:0 auto;
+	padding-left:15px;
+}
+
+.Portfolio-box{
+	text-align:center;
+	margin-bottom:30px;
+	height:350px;
+	width:350px;
+	overflow:hidden;
+	float:left;
+	padding:0;
+}
+.Portfolio-box img{
+	margin-bottom:25px;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;	
+}
+
+.Portfolio-box img:hover {
+	opacity: 0.6;
+}
+
+.Portfolio-nav li a.current{
+	background:#7cc576;
+	color:#fff;
+	text-decoration:none;
+}
+img {
+   max-width:100%;
+}
+
+/* no transition on .isotope container */
+
 .isotope .isotope-item {
   /* change duration value to whatever you like */
   -webkit-transition-duration: 0.6s;
@@ -546,8 +587,8 @@ border: 2px solid #fff;
 	width:auto;
 	height:auto;
 	position:relative;
-	border-radius:2%;
-	box-shadow:4px 5px 9px 11px rgba(162, 162, 162, 0.7);
+	/*border-radius:50%; */
+	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
 	margin:7px 7px 25px 7px;
 	
 }
@@ -555,7 +596,7 @@ border: 2px solid #fff;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
-	border-radius:2%;
+	/*border-radius:50%; */
 	position:absolute;
 	width:100%;
 	height:100%;
@@ -572,7 +613,7 @@ border: 2px solid #fff;
 .team-leader:hover ul{ display:block; opacity:1}
 .team-leader img{
 	display:block;
-	border-radius:2%;
+	/*border-radius:50%; */
 }
 .team-leader ul{
 	display:block;
@@ -929,6 +970,17 @@ span.to-top-text {
 	text-transform: uppercase;
 	}
 
+/*span.to-top-text {
+	font-family: 'Lato', sans-serif;
+	font-size: 8px;
+	font-weight: 400;
+	line-height: 100%;
+	position: absolute;
+		bottom: 11px;
+		left: 10.5px;
+	text-transform: uppercase;
+	}*/
+}
 /*Contact-us Page */
 
 .gmap-area {
@@ -1093,5 +1145,3 @@ display:none;
 .nbs-flexisel-nav-right.disabled {
     opacity: 0.4;
 }
-
-
