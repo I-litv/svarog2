@@ -32,13 +32,13 @@
 </head>
 <body class="frontPage">
 <header class="headerOne" id="bg"><!--header-start-->
-  <div class="container" id="headerDelay">
+	<div class="container" id="headerDelay">
     <figure class="logo animated fadeIn delay-06s"> 
-          <a href="main.html"><img src="svarog.png" alt=""></a>   
+        	<a href="main.html"><img src="svarog.png" alt=""></a> 	
     </figure> 
        <!-- <h1 class="animated fadeInDown delay-20s">Добро пожаловать в:</h1>
         <ul class="we-create animated fadeInRight delay-20s" style="padding-top:10px">
-          <li></li>
+        	<li></li>
         </ul>
             <a class="link animated fadeInLeft delay-20s servicelink" href="main.html">Добро Пожаловать</a> -->
     </div>
@@ -77,47 +77,47 @@
 
 
 <script type="text/javascript">
-  $(window).load(function(){
-    
-    $('.main-nav li a, .servicelink').bind('click',function(event){
-      var $anchor = $(this);
-      
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 102
-      }, 1500,'easeInOutExpo');
-      /*
-      if you don't want to use the easing effects:
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
-      }, 1000);
-      */
+	$(window).load(function(){
+		
+		$('.main-nav li a, .servicelink').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
       if ($(window).width() < 768 ) { 
         $('.main-nav').hide(); 
       }
-      event.preventDefault();
-    });
-  })
+			event.preventDefault();
+		});
+	})
 </script>
-  <script>
+	<script>
 jQuery(document).ready(function($){
-      $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  
-  });
-  });
-  //Click event to scroll to top
-    
-    
-  $('.scroll-to-top').click(function(){
-    var divPosition = $('.small-logo').offset();
-    $('html, body').animate({scrollTop: divPosition}, "slow");
-    return false;
-  });
-  </script>
+    	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scroll-to-top').fadeIn();
+		} else {
+			$('.scroll-to-top').fadeOut();
+		}
+	
+	});
+	});
+	//Click event to scroll to top
+		
+		
+	$('.scroll-to-top').click(function(){
+		var divPosition = $('.small-logo').offset();
+		$('html, body').animate({scrollTop: divPosition}, "slow");
+		return false;
+	});
+	</script>
 <script type="text/javascript">
 
 $(window).load(function(){
@@ -155,7 +155,7 @@ $(window).load(function(){
  
         var selector = $(this).attr('data-filter');
         $container.isotope({
-      
+			
             filter: selector,
          });
          return false;

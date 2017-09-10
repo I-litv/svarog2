@@ -39,10 +39,10 @@
         <div class="top-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-xs-4" style="display: : inline-block">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38093 896 22 24</p></div>
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38066 331 89 16</p></div>
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38067 904 18 83</p></div>
+                    <div class="col-sm-6 col-xs-5" style="display: : inline-block">
+                        <div class="top-number"><p> +38093 896 22 24</p></div>
+                        <div class="top-number"><p> +38066 331 89 16</p></div>
+                        <div class="top-number"><p> +38067 904 18 83</p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
@@ -115,7 +115,7 @@
                             <li class="col-sm-12">
                                 <address>
                                     <h5>НВК №33</h5>
-                                    <p> город Днипро ул. Красная 1, <br>
+                                    <p> город Днепр, ул. Красная 1, <br>
                                     НВК №33</p>
                                     <p>Дни тренеровок: <br>
                                     Понедельник, Среда, Пятница</p>
@@ -123,7 +123,7 @@
 
                                 <address style="padding-left: 33%">
                                     <h5>СШ №107</h5>
-                                    <p> город Днепр, ул. Холмогорская 7-А  <br>
+                                    <p> город Днепр, ул. Холмогорская 7-А,  <br>
                                     СШ №107</p>                                
                                     <p>Дни тренеровок: <br>
                                     Вторник, Четверг, Суббота</p>
@@ -151,42 +151,34 @@
                 <h2>Обратная связь</h2>
                 <p class="lead">Если у вас есть вопросы, можете заполнить форму ниже или позвонить, будем рады ответить на все ваши вопросы.</p>
             </div> 
-            <div class="row contact-wrap"> 
-                <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-                    <div class="col-sm-5 col-sm-offset-1">
+            
+            <div class="col-lg-12 col-sm-12 wow fadeInUp delay-05s">
+                <div class="form">
+                    
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
                         <div class="form-group">
-                            <label>Имя *</label>
-                            <input type="text" name="name" class="form-control" required="required">
+                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Ваше Имя" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" name="email" class="form-control" required="required" placeholder="club@svarog.dp.ua">
+                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Ваш Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <label>Телефон</label>
-                            <input type="number" class="form-control" placeholder="+380 93 000 00 00">
+                            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Укажите тему.." data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <label>Company Name</label>
-                            <input type="text" class="form-control">
-                        </div>                        
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label>Тема *</label>
-                            <input type="text" name="subject" class="form-control" required="required">
+                            <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Ввведите ваше сообщение..."></textarea>
+                            <div class="validation"></div>
                         </div>
-                        <div class="form-group">
-                            <label>Сообщение *</label>
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
-                        </div>                        
-                        <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Отправить</button>
-                        </div>
-                    </div>
-                </form> 
-            </div><!--/.row-->
+                        
+                        <div class="text-center"><button type="submit" class="input-btn">Отправить</button></div>
+                    </form>
+                </div>  
+            </div>
         </div><!--/.container-->
     </section><!--/#contact-page-->
 

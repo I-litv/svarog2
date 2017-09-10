@@ -37,10 +37,10 @@
         <div class="top-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-xs-4" style="display: : inline-block">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38093 896 22 24</p></div>
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38066 331 89 16</p></div>
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +38067 904 18 83</p></div>
+                    <div class="col-sm-6 col-xs-5" style="display: : inline-block">
+                        <div class="top-number"><p> +38093 896 22 24</p></div>
+                        <div class="top-number"><p> +38066 331 89 16</p></div>
+                        <div class="top-number"><p> +38067 904 18 83</p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
@@ -76,7 +76,7 @@
                     <li><a href="video.html">Видео</a></li>
                     </ul>
             </li>
-            <li class="small-logo"><a href="#header" id="headerLogo"><img src="img/smal-logo.png" alt=""></a></li>
+            <li class="small-logo"><a href="#header" id="headerLogo" onMouseOver="window.status='Click here to go to HTML Goodies'; return true" onMouseOut="window.status='I said click!'; return true"><img src="img/smal-logo.png" alt=""></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="flip flip flip flip">О клубе<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -94,65 +94,74 @@
 
  <!-- <div class="container"> -->
     <div class="ratingBackground row"> 
-      <div class="col-md-3 col-sm-6">  
-            <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="col-md-3 col-sm-6 col-xs-offset-1">  
+            <div class="single-profile-top2 wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="800ms">
               <div class="media">
-                <div class="pull-left">
-                  <a href="#"><img class="media-object" src="img/rating/yaroslav.jpg" alt=""></a>
-                </div>
-                <div class="media-body">
+              <div class="media-body">
                   <h4>Драненко Ярослав </h4>               
                 </div>
+                <div class="pull-left">
+                  <a href="#"><img class="media-object" src="img/rating/yaroslav.jpg" alt="" onmouseover="return toggleMe('para1')" onmouseleave="return leaveMe('para1')"></a>
+                </div>
+                
                 
 
               </div><!--/.media -->
-              <p> •  Чемпион Днепропетровской области по комбат джиу-джитсу 2017<br>
+             <!-- <input type="button" onclick="return toggleMe('para1')" value="Открыть"><br> -->
+          <div id="para1" style="display: none;">
+          <p> •  Чемпион Днепропетровской области по комбат джиу-джитсу 2017<br>
                   • Чемпион Днепропетровской области по боевому самбо 2017<br>
                   • Чемпион Днепропетровской области по борьбе «Унибор» 2017<br>
-        </p>
-        
+          </p>
+          </div>
+              
         </div>
-        </div>
-
-          <!--/.col-lg-4 -->
-          
-          
-          <div class="col-md-3 col-sm-6 "> 
-            <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+    </div> <!--/.col-lg-4 -->
+         
+          <div class="col-md-3 col-sm-6 col-xs-offset-1 "> 
+            <div class="single-profile-top1 wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="1500ms">
               <div class="media">
-                <div class="pull-left">
-                  <a href="#"><img class="media-object" src="images/man2.jpg" alt=""></a>
-                </div>
-                <div class="media-body">
+              <div class="media-body">
                   <h4>Продаевич Максим</h4>
                 </div>
+                <div class="pull-left">
+                  <a href="#"><img class="media-object" src="img/rating/max.jpg" alt="" onmouseover="return toggleMe('para2')" onmouseleave="return leaveMe('para2')"></a>
+                </div>
+                
               </div><!--/.media -->
-              <p> •  4-х кратный чемпион Днепропетровской области по комбат джиу-джитсу 2016,2017<br>
+           <!--   <input type="button" onclick="return toggleMe('para2')" value="Открыть"><br> -->
+             <div style="display: none;" id="para2"> <p > •  4-х кратный чемпион Днепропетровской области по комбат джиу-джитсу 2016,2017<br>
                   • 2-х кратный чемпион  Днепропетровской области по рукопашному бою 2016 <br>
                   • 2-х кратный чемпион  чемпион Днепропетровской области по борьбе «Унибор» 2016, 2017<br>
                   • Чемпион Днепропетровской области по боевому самбо 2017<br>
                   </p>
+                  </div>
             </div>
           </div><!--/.col-lg-4 -->
-          <div class="col-md-4 col-sm-6 "> 
-            <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+         
+          <div class="col-md-3 col-sm-6 col-xs-offset-1"> 
+            <div class="single-profile-top3 wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="300ms">
               <div class="media">
-                <div class="pull-left">
-                  <a href="#"><img class="media-object" src="img/rating/sherman.jpg" alt=""></a>
-                </div>
-                <div class="media-body">
+              <div class="media-body">
                   <h4>Шерман Никита</h4>
                 </div>
+                <div class="pull-left">
+                  <a href="#"><img class="media-object" src="img/rating/sherman.jpg" alt="" onmouseover="return toggleMe('para3')" onmouseleave="return leaveMe('para3')"></a>
+                </div>
+                
               </div><!--/.media -->
+             <!--- <input type="button" onmouseover="return toggleMe('para3')" onmouseleave="return leaveMe('para3')" value="Открыть"><br> -->
+              <div style="display: none;" id="para3">
               <p> • 3-х кратный Чемпион Днепропетровской области по Рукопашному бою <br>
                   • Чемпион Днепропетровской области по борьбе "Унибор" 2017<br>
                   </p>
+                  </div>
           </div>
 
           </div> 
-          </div>
+    </div>
     
-     <div class="row">
+<div class="row">
        <div class="accordion">
     <div class="accordion-section">
         <a class="accordion-section-title" href="#accordion-4">#4 Шульгин Назар</a>
@@ -186,56 +195,56 @@
         <a class="accordion-section-title" href="#accordion-8"> #8 Мыльников Иван</a>
          
         <div id="accordion-8" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+            <p>В-12 П-10 1место-3, 2место-3, 3место-2</p>
         </div><!--end .accordion-section-content-->
     </div><!--end .accordion-section-->
     <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-6">#9</a>
-         
-        <div id="accordion-6" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
-        </div><!--end .accordion-section-content-->
-    </div><!--end .accordion-section-->
-    <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-7">#10</a>
-         
-        <div id="accordion-7" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
-        </div><!--end .accordion-section-content-->
-    </div><!--end .accordion-section-->
-    <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-8">#11</a>
-         
-        <div id="accordion-8" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
-        </div><!--end .accordion-section-content-->
-    </div><!--end .accordion-section-->
-    <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-9">#12</a>
+        <a class="accordion-section-title" href="#accordion-9">#9 Артеменко Павел</a>
          
         <div id="accordion-9" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+            <p>В-10 П-4 1место-1, 2место-4, 3место-0</p>
         </div><!--end .accordion-section-content-->
     </div><!--end .accordion-section-->
     <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-10">#13</a>
+        <a class="accordion-section-title" href="#accordion-10">#10 Дубовик Дмитрий</a>
          
         <div id="accordion-10" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+            <p>В-9 П-8 1место-2, 2место-3, 3место-2</p>
         </div><!--end .accordion-section-content-->
     </div><!--end .accordion-section-->
     <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-11"> #14</a>
+        <a class="accordion-section-title" href="#accordion-11">#11 Гапоненко Никита</a>
          
         <div id="accordion-11" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+            <p>В-6 П-3 1место-1, 2место-3, 3место-1</p>
         </div><!--end .accordion-section-content-->
     </div><!--end .accordion-section-->
     <div class="accordion-section">
-        <a class="accordion-section-title" href="#accordion-12"> #15</a>
+        <a class="accordion-section-title" href="#accordion-12">#12 Потапенков Валентин</a>
          
         <div id="accordion-12" class="accordion-section-content">
-            <p>Mauris interdum fringilla augue vitae tincidunt. Curabitur vitae tortor id eros euismod ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent nulla mi, rutrum ut feugiat at, vestibulum ut neque? Cras tincidunt enim vel aliquet facilisis. Duis congue ullamcorper vehicula. Proin nunc lacus, semper sit amet elit sit amet, aliquet pulvinar erat. Nunc pretium quis sapien eu rhoncus. Suspendisse ornare gravida mi, et placerat tellus tempor vitae.</p>
+            <p>В-7 П-1 1место-2, 2место-1, 3место-0</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-13">#13 Полешко Глеб</a>
+         
+        <div id="accordion-13" class="accordion-section-content">
+            <p>В-5 П-8 1место-1, 2место-1, 3место-2</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-14"> #14 Коханенко Руслан</a>
+         
+        <div id="accordion-14" class="accordion-section-content">
+            <p>В-3 П-3 1место-1, 2место-0, 3место-1</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-15"> #15 Фещенко Даниил</a>
+         
+        <div id="accordion-15" class="accordion-section-content">
+            <p>В-4 П-4 1место-1, 2место-1, 3место-1</p>
         </div><!--end .accordion-section-content-->
     </div><!--end .accordion-section-->  
 </div><!--end .accordion-->
@@ -267,6 +276,32 @@
 <script src="contactform/contactform.js"></script>
 <script src="https://use.fontawesome.com/ba29e63a13.js"></script>
 <script src="js/bootstrap-dropdownhover.min.js"></script>
+<script type="text/javascript">
+function toggleMe(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="none"){
+e.style.display="block"
+}
+else{
+e.style.display="none"
+}
+return true;
+}
+</script>
+<script type="text/javascript">
+function leaveMe(a){
+var e=document.getElementById(a);
+if(!e)return true;
+if(e.style.display=="block"){
+e.style.display="none"
+}
+else{
+e.style.display="none"
+}
+return true;
+}
+</script>
 <script type="text/javascript">
   $(document).ready(function() {
     function close_accordion_section() {
